@@ -1,0 +1,64 @@
+<!DOCTYPE HTML><html>
+<head>
+    <title>KONTROL TOREN ONLINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon"  type="image/png" href="favicon.png">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+</head>
+<body>
+    <div class="topnav">
+        <h1>Kontrol Pengisian Toren</h1>
+    </div>
+    <div class="content">
+        <div class="card-grid">
+            <div class="card">             
+                <p class="card-title"> Toren Kulon </p>
+                <label class="switch">
+                    <input type="checkbox" onchange="toggleCheckbox(this)" id="0">
+                    <span class="slider"></span>
+                </label>
+                <p class ="state">Status: <span id="0s"></span></p>
+            </div>
+            <div class="card">
+                <p class="card-title"> Toren Wetan </p>
+                <label class="switch">
+                    <input type="checkbox" onchange="toggleCheckbox(this)" id="4">
+                    <span class="slider"></span>
+                </label>
+                <p class ="state">Status: <span id="4s"></span></p>
+            </div>
+            <div class="card">
+                <p class="card-title"> Pompa Air </p>
+                <label class="switch">
+                    <input type="checkbox" onchange="toggleCheckbox(this)" id="5">
+                    <span class="slider"></span>
+                </label>
+                <p class ="state">Status: <span id="5s"></span></p>
+            </div>
+            <!-- <div class="card">
+                <p class="card-title"><i class="fas fa-lightbulb"></i> GPIO 26</p>
+                <label class="switch">
+                    <input type="checkbox" onchange="toggleCheckbox(this)" id="26">
+                    <span class="slider"></span>
+                </label>
+                <p class="state">State: <span id="26s"></span></p>
+            </div> -->
+        <!-- <div class="content"> -->
+        <!-- <div class="card-grid">
+            <div class="card">             
+                <p class="card-title"><i class="fas fa-lightbulb"></i> GPIO 27</p>
+                <label class="switch">
+                    <input type="checkbox" onchange="toggleCheckbox(this)" id="27">
+                    <span class="slider"></span>
+                </label>
+                <p class ="state">State: <span id="27s"></span></p>
+            </div>
+        </div> -->
+        </div>
+    </div>
+<script src="/script.js"></script>
+</body>
+</html>
+
+
