@@ -18,7 +18,7 @@ function onOpen(event) {
     console.log('Connection opened');
     websocket.send("states");
 }
-  
+
 function onClose(event) {
     console.log('Connection closed');
     setTimeout(initWebSocket, 2000);
@@ -26,21 +26,21 @@ function onClose(event) {
 
 function onMessage(event) {
     var myObj = JSON.parse(event.data);
-            console.log(myObj);
-            for (i in myObj.gpios){
-                var output = myObj.gpios[i].output;
-                var state = myObj.gpios[i].state;
-                console.log(output);
-                console.log(state);
-                if (state == "0"){
-                    document.getElementById(output).checked = true;
-                    document.getElementById(output+"s").innerHTML = "ON";
-                }
-                else{
-                    document.getElementById(output).checked = false;
-                    document.getElementById(output+"s").innerHTML = "OFF";
-                }
+        console.log(myObj);
+        for (i in myObj.gpios){
+            var output = myObj.gpios[i].output;
+            var state = myObj.gpios[i].state;
+            console.log(output);
+            console.log(state);
+            if (state == "0"){
+                document.getElementById(output).checked = true;
+                document.getElementById(output+"s").innerHTML = "ON";
             }
+            else{
+                document.getElementById(output).checked = false;
+                document.getElementById(output+"s").innerHTML = "OFF";
+            }
+        }
     console.log(event.data);
 }
 
