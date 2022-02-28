@@ -6,7 +6,7 @@ here I made some local web server switches to control:
 
 - One water reservoir (Toren Kulon)
 - The second water reservoir (Toren Wetan)
-- Water pump
+- Water pump (Pompa Air)
 
 Wherein the first and second switches are to control the two relays, each of which is connected to a solenoid valve to fill the first and second reservoirs and the third switch is to control the relay which is connected to the water pump.
 
